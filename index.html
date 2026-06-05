@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ludovic BULTEY | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0b1220, #1e293b);
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--muted);
+      margin: 5px 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #1f2937;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #1f2937;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ludovic BULTEY</h1>
+  <h2>Architecte IT | Product Manager | Consultant Digital | Chef de projet transformation | Formateur</h2>
+  <p>📍 Belfort – Télétravail / hybride</p>
+  <p><a href="https://linkedin.com/in/bultey-ludovic" target="_blank">LinkedIn</a></p>
+</header>
+
+<div class="container">
+
+  <!-- PROFIL -->
+  <div class="section">
+    <h3>Profil</h3>
+    <div class="card">
+      Architecte IT, Product Manager et Consultant Digital avec plus de 30 ans d’expérience dans les systèmes d’information,
+      la conduite de projets et le développement commercial IT.
+      <br><br>
+      Mon parcours combine trois dimensions complémentaires :
+      <ul>
+        <li><b>Technique :</b> architecture SI, développement web, data, bases de données</li>
+        <li><b>Produit / projet :</b> pilotage digital, KPI, transformation, coordination d’équipes</li>
+        <li><b>Pédagogie :</b> enseignement, formation et transmission des compétences</li>
+      </ul>
+      <br>
+      Aujourd’hui, j’interviens sur des missions de transformation digitale, product management et conduite de projet,
+      avec une forte capacité à relier enjeux métiers, données et solutions techniques.
+    </div>
+  </div>
+
+  <!-- COMPETENCES -->
+  <div class="section">
+    <h3>Compétences</h3>
+
+    <div class="grid">
+
+      <div class="card">
+        <b>🚀 Product & Transformation digitale</b><br><br>
+        <span class="tag">Product Management</span>
+        <span class="tag">Pilotage projets</span>
+        <span class="tag">KPI</span>
+        <span class="tag">Conduite du changement</span>
+        <span class="tag">Analyse métier</span>
+      </div>
+
+      <div class="card">
+        <b>📊 Data & BI</b><br><br>
+        <span class="tag">Power BI</span>
+        <span class="tag">Reporting</span>
+        <span class="tag">Excel avancé</span>
+        <span class="tag">Analyse de données</span>
+      </div>
+
+      <div class="card">
+        <b>🧠 Bases de données</b><br><br>
+        <span class="tag">SQL</span>
+        <span class="tag">Modélisation</span>
+        <span class="tag">Jointures</span>
+        <span class="tag">ETL</span>
+      </div>
+
+      <div class="card">
+        <b>💻 Développement</b><br><br>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">PHP</span>
+      </div>
+
+      <div class="card">
+        <b>🤝 Soft skills</b><br><br>
+        <span class="tag">Management</span>
+        <span class="tag">Formation</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Vulgarisation technique</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h3>Expériences</h3>
+
+    <div class="card">
+      <b>🎓 Formateur / Enseignant – Digital & Gestion</b><br>
+      <span class="subtitle">CMA Formation BFC – 2024 / 2025</span>
+      <ul>
+        <li>Formation en gestion, marketing et digitalisation</li>
+        <li>Création de supports pédagogiques structurés</li>
+        <li>Suivi de progression via indicateurs et reporting</li>
+        <li>Analyse de données pédagogiques et métiers</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <b>🎓 Enseignant contractuel – Éducation nationale</b><br>
+      <span class="subtitle">2016 – 2022</span>
+      <ul>
+        <li>Économie-gestion et numérique</li>
+        <li>Accompagnement des apprenants</li>
+        <li>Suivi pédagogique individualisé</li>
+        <li>Introduction aux outils de gestion et SI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <b>💼 Ingénieur d’affaires IT → Chef de projet → Responsable agence</b><br>
+      <span class="subtitle">1993 – 2014</span>
+      <ul>
+        <li>Développement commercial de solutions IT</li>
+        <li>Gestion d’équipes et centres de profit</li>
+        <li>Pilotage de projets clients</li>
+        <li>Déploiement KPI et reporting de performance</li>
+        <li>Transformation numérique des clients</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- FORMATION -->
+  <div class="section">
+    <h3>Formation</h3>
+
+    <div class="card">M2 Management de projet digital – OpenClassrooms (2023–2025)</div>
+    <div class="card">M1 CCA – CNAM INTEC (2022–2023)</div>
+    <div class="card">Architecte Client/Serveur – EPF (2000–2001)</div>
+    <div class="card">Chargé d’affaires IT – ESICI Bordeaux (1992–1993)</div>
+    <div class="card">Analyste programmeur IBM AS/400 (1989–1990)</div>
+  </div>
+
+</div>
+
+<footer>
+  Portfolio GitHub Pages – Ludovic BULTEY
+</footer>
+
+</body>
+</html>
