@@ -1,302 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professionnel polyvalent</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV | Professionnel polyvalent</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0b3d91, #1e88e5);
-    color: #333;
-}
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, Arial, sans-serif;
+    }
 
-header {
-    text-align: center;
-    color: white;
-    padding: 50px 20px;
-}
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 34px;
-}
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0b1220, #1e293b);
+      border-bottom: 1px solid #1f2937;
+    }
 
-header h2 {
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 10px;
-}
+    header h1 {
+      font-size: 2.4rem;
+    }
 
-.card {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
+    header h2 {
+      font-size: 1.1rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 8px;
+    }
 
-h3 {
-    border-left: 5px solid #1e88e5;
-    padding-left: 12px;
-    color: #0b3d91;
-    margin-top: 0;
-}
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-h4 {
-    margin-bottom: 5px;
-    color: #1e88e5;
-}
+    .section {
+      margin-bottom: 35px;
+    }
 
-.job {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
+    .section h3 {
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
 
-.date {
-    font-size: 12px;
-    color: gray;
-}
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #1f2937;
+    }
 
-ul {
-    margin: 5px 0 10px 20px;
-}
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
 
-.tag {
-    display: inline-block;
-    background: #e3f2fd;
-    color: #0b3d91;
-    padding: 6px 10px;
-    border-radius: 20px;
-    margin: 3px;
-    font-size: 12px;
-}
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
 
-.section-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-footer {
-    text-align: center;
-    color: white;
-    padding: 20px;
-    font-size: 12px;
-}
-</style>
+    ul {
+      padding-left: 18px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Professionnel polyvalent</h1>
-    <h2>Gestion • Comptabilité • Informatique • Formation • Digitalisation</h2>
+  <h1>Professionnel polyvalent</h1>
+  <h2>Gestion • Comptabilité • Informatique • Formation • Digitalisation</h2>
+  <p class="muted">Belfort (90000) • Mobilité Grand Est / Bourgogne-Franche-Comté</p>
 </header>
 
 <div class="container">
 
-<!-- PROFIL -->
-<div class="card">
-<h3>Profil</h3>
-<p>
-Professionnel polyvalent disposant de plus de 30 ans d’expérience dans les domaines de l’informatique, de la gestion, du développement commercial et de la formation.
-</p>
-<p>
-J’interviens aujourd’hui dans la gestion, la comptabilité et la transformation digitale auprès d’organisations et d’apprenants.
-</p>
-<p>
-Mon parcours combine des fonctions techniques, commerciales, managériales et pédagogiques. Depuis 2014, je me suis orienté vers la formation et l’enseignement à différents niveaux (primaire, secondaire, supérieur et BTS).
-</p>
-<p>
-Je conserve une activité opérationnelle en comptabilité et gestion administrative, ce qui me permet de rester connecté aux réalités des entreprises.
-</p>
-</div>
+  <!-- PROFIL -->
+  <div class="section">
+    <h3>Profil</h3>
+    <div class="card">
+      Professionnel polyvalent disposant de plus de 30 ans d’expérience en informatique, gestion, développement commercial et formation.
+      <br><br>
+      J’interviens aujourd’hui auprès d’organisations et d’apprenants dans les domaines de la gestion, de la comptabilité et de la transformation digitale.
+      <br><br>
+      Mon parcours combine des fonctions techniques, commerciales, managériales et pédagogiques. Depuis 2014, je me suis orienté vers la formation et l’enseignement (du primaire au BTS).
+      <br><br>
+      Je conserve une activité opérationnelle en comptabilité et gestion administrative, garantissant une forte connexion au terrain.
+    </div>
+  </div>
 
-<!-- EXPERIENCE FORMATION -->
-<div class="card">
-<h3>Formation & enseignement</h3>
+  <!-- COMPETENCES -->
+  <div class="section">
+    <h3>Compétences</h3>
+    <div class="card">
+      <span class="tag">Gestion</span>
+      <span class="tag">Comptabilité</span>
+      <span class="tag">Digitalisation</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Python</span>
+      <span class="tag">Excel avancé</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">WordPress</span>
+      <span class="tag">CRM (HubSpot)</span>
+      <span class="tag">ERP (Odoo)</span>
+      <span class="tag">Gestion de projet</span>
+      <span class="tag">Formation</span>
+      <span class="tag">Analyse de données</span>
+    </div>
+  </div>
 
-<div class="job">
-<h4>Enseignant – PrestaCours</h4>
-<div class="date">2026</div>
-<ul>
-<li>Parcours pédagogiques niveau 6e</li>
-<li>Tests de positionnement</li>
-<li>Remédiation individualisée</li>
-<li>Suivi familles / établissements</li>
-</ul>
-</div>
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h3>Expériences professionnelles</h3>
 
-<div class="job">
-<h4>Formateur – CMA FORMATION BFC</h4>
-<div class="date">2024 – 2025</div>
-<ul>
-<li>BTS NDRC / MCO / GPME</li>
-<li>WordPress, CRM, ERP</li>
-<li>Google Workspace, bases de données</li>
-<li>Pédagogie par projet</li>
-</ul>
-</div>
+    <div class="card">
+      <b>Enseignant – PrestaCours</b><br>
+      <span class="muted">avr. 2026 – juin 2026</span>
+      <ul>
+        <li>Tests de positionnement et diagnostic des acquis</li>
+        <li>Parcours pédagogiques niveau 6e</li>
+        <li>Remédiation individualisée</li>
+        <li>Suivi familles et établissements</li>
+      </ul>
+    </div>
 
-<div class="job">
-<h4>Éducation nationale – Enseignant contractuel</h4>
-<div class="date">2016 – 2022</div>
-<ul>
-<li>Enseignement primaire, secondaire, professionnel</li>
-<li>Adaptation pédagogique</li>
-<li>Suivi individualisé des élèves</li>
-</ul>
-</div>
+    <div class="card">
+      <b>Formateur BTS – CMA FORMATION BFC</b><br>
+      <span class="muted">nov. 2024 – juil. 2025</span>
+      <ul>
+        <li>Digitalisation BTS NDRC / MCO / GPME</li>
+        <li>WordPress, CRM, ERP, Google Workspace</li>
+        <li>Bases de données et e-commerce</li>
+        <li>Pédagogie par projets</li>
+      </ul>
+    </div>
 
-<div class="job">
-<h4>CFA Académique – BTS / TSTMG</h4>
-<div class="date">2020</div>
-<ul>
-<li>Comptabilité et gestion des coûts</li>
-<li>SQL, XML, RGPD</li>
-</ul>
-</div>
-</div>
+    <div class="card">
+      <b>Comptable – APASAD</b><br>
+      <span class="muted">nov. 2022 – mars 2023</span>
+      <ul>
+        <li>Comptabilité générale et auxiliaire</li>
+        <li>Rapprochements bancaires</li>
+        <li>Clôtures et reporting</li>
+      </ul>
+    </div>
 
-<!-- COMPTABILITE -->
-<div class="card">
-<h3>Comptabilité & gestion</h3>
+    <div class="card">
+      <b>Technicien-comptable – AFDLV</b><br>
+      <span class="muted">mai 2023 – juin 2023</span>
+      <ul>
+        <li>Saisie comptable</li>
+        <li>Lettrage et justification des comptes</li>
+        <li>Tableaux de bord financiers</li>
+      </ul>
+    </div>
 
-<div class="job">
-<h4>Technicien-comptable – AFDLV</h4>
-<div class="date">2023</div>
-<ul>
-<li>Saisie comptable</li>
-<li>Rapprochements bancaires</li>
-<li>Lettrage et contrôle</li>
-<li>Tableaux de bord</li>
-</ul>
-</div>
+    <div class="card">
+      <b>Ingénieur commercial – Omnitech Informatique</b><br>
+      <span class="muted">2006 – 2009</span>
+      <ul>
+        <li>Gestion de projets IT</li>
+        <li>Appels d’offres et chiffrage</li>
+        <li>Développement commercial B2B</li>
+      </ul>
+    </div>
 
-<div class="job">
-<h4>Comptable – APASAD</h4>
-<div class="date">2022 – 2023</div>
-<ul>
-<li>Comptabilité générale et auxiliaire</li>
-<li>Clôtures comptables</li>
-<li>Reporting financier</li>
-</ul>
-</div>
-</div>
+  </div>
 
-<!-- INFORMATIQUE -->
-<div class="card">
-<h3>Informatique & développement commercial</h3>
+  <!-- FORMATION -->
+  <div class="section">
+    <h3>Formation</h3>
 
-<ul>
-<li><b>Omnitech Informatique</b> – Ingénieur commercial (gestion de projets IT)</li>
-<li><b>Web Reflex</b> – Technico-commercial</li>
-<li><b>ABCIS Informatique</b> – Ingénieur commercial</li>
-<li><b>Brime Ingénierie</b> – Création d’agence IT & projets logiciels</li>
-<li><b>Nat System</b> – Ingénieur d’affaires (banque/assurance)</li>
-<li><b>Mediatec</b> – Déploiement grands comptes IT</li>
-<li><b>Tektronix</b> – commercial + technicien</li>
-<li><b>Ricoh France</b> – formateur solutions numériques</li>
-<li><b>Kronenbourg</b> – analyste IBM (MVS)</li>
-</ul>
-</div>
+    <div class="card">
+      OpenClassrooms – Product Management (Bac+5)
+    </div>
 
-<!-- FORMATION -->
-<div class="card">
-<h3>Formation académique</h3>
-<ul>
-<li>OpenClassrooms – Product Management (Bac+5)</li>
-<li>CNAM – M1 Finance & Comptabilité</li>
-<li>EPF – Architecture client/serveur</li>
-<li>ESICI – Chargé d’affaires informatique</li>
-<li>AGI – IBM AS/400 (RPG III)</li>
-</ul>
-</div>
+    <div class="card">
+      CNAM – M1 Finance & Comptabilité
+    </div>
 
-<!-- CERTIFICATIONS -->
-<div class="card">
-<h3>Certifications</h3>
+    <div class="card">
+      EPF – Architecture client/serveur
+    </div>
 
-<div class="section-grid">
+    <div class="card">
+      ESICI – Chargé d’affaires informatique
+    </div>
 
-<div>
-<h4>Pédagogie</h4>
-<div class="tag">Enseignement supérieur</div>
-<div class="tag">NSI / FUN Inria</div>
-</div>
+    <div class="card">
+      AGI – Analyste programmeur IBM AS/400
+    </div>
+  </div>
 
-<div>
-<h4>Digital</h4>
-<div class="tag">Power BI</div>
-<div class="tag">Agile</div>
-<div class="tag">SQL</div>
-<div class="tag">Web</div>
-</div>
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <h3>Certifications</h3>
+    <div class="card">
+      <span class="tag">Power BI</span>
+      <span class="tag">Agile</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Pédagogie du supérieur</span>
+      <span class="tag">Marchés publics</span>
+      <span class="tag">Psychologie de l’apprentissage</span>
+      <span class="tag">Droit</span>
+    </div>
+  </div>
 
-<div>
-<h4>Gestion</h4>
-<div class="tag">Comptabilité CNAM</div>
-<div class="tag">Marchés publics</div>
-</div>
-
-<div>
-<h4>Psychologie</h4>
-<div class="tag">Apprentissage</div>
-</div>
-
-</div>
-</div>
-
-<!-- COMPETENCES -->
-<div class="card">
-<h3>Compétences</h3>
-
-<div class="section-grid">
-<div>
-<h4>Gestion</h4>
-<div class="tag">Comptabilité</div>
-<div class="tag">Gestion financière</div>
-<div class="tag">Analyse de coûts</div>
-</div>
-
-<div>
-<h4>Digital</h4>
-<div class="tag">Power BI</div>
-<div class="tag">WordPress</div>
-<div class="tag">CRM</div>
-<div class="tag">ERP</div>
-</div>
-
-<div>
-<h4>Tech</h4>
-<div class="tag">SQL</div>
-<div class="tag">Python</div>
-<div class="tag">Excel avancé</div>
-</div>
-
-<div>
-<h4>Transversal</h4>
-<div class="tag">Formation</div>
-<div class="tag">Pédagogie</div>
-<div class="tag">Gestion de projet</div>
-</div>
-</div>
-</div>
+  <!-- CONTACT -->
+  <div class="section">
+    <h3>Contact</h3>
+    <div class="card">
+      📍 Belfort / Grand Est / Bourgogne-Franche-Comté<br>
+      📧 Ouvert aux missions en gestion, formation et digitalisation<br>
+      💼 Disponible pour missions et collaborations
+    </div>
+  </div>
 
 </div>
 
 <footer>
-CV Professionnel polyvalent – GitHub Pages
+Professionnel polyvalent – GitHub Pages
 </footer>
 
 <footer>
