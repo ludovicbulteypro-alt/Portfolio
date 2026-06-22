@@ -48,25 +48,66 @@ header h2 {
   padding:40px 20px;
 }
 
-.section {
-  margin-bottom:35px;
+/* UML STYLE */
+.uml-package {
+  margin-top:25px;
+  border:1px solid #1f2937;
+  padding:15px;
+  border-radius:10px;
+  background:rgba(17,24,39,0.6);
 }
 
-.section h3 {
+.uml-title {
   color:var(--accent);
+  font-weight:bold;
+  margin-bottom:12px;
   border-left:4px solid var(--accent);
   padding-left:10px;
-  margin-bottom:12px;
-  font-size:1.2rem;
 }
 
-.card {
+.uml-line {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.usecase {
   background:var(--card);
-  padding:16px;
-  border-radius:10px;
-  margin-bottom:10px;
   border:1px solid #1f2937;
-  white-space:pre-line;
+  border-radius:10px;
+  padding:12px;
+  width:240px;
+}
+
+.usecase b {
+  color:var(--text);
+}
+
+.usecase small {
+  color:var(--muted);
+}
+
+/* TIMELINE */
+.timeline {
+  background:var(--card);
+  border:1px solid #1f2937;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+}
+
+.timeline-box {
+  border:1px solid #1f2937;
+  padding:8px;
+  border-radius:6px;
+  width:220px;
+  margin:auto;
+  background:#0b1220;
+}
+
+.arrow {
+  color:var(--muted);
+  margin:6px 0;
 }
 
 </style>
@@ -81,110 +122,170 @@ header h2 {
 
 <div class="container">
 
-<!-- PROFIL -->
-<div class="section">
-<h3>Profil</h3>
-<div class="card">
-Spécialiste des systèmes d’information issu d’une école de commerce, j’ai complété mon parcours par un Master 1 CCA (2023) et une certification Product Manager (2025).
-  
-Depuis plus de 30 ans, j’évolue à l’intersection de la technologie, du business et de la formation, avec un parcours allant de fonctions techniques IBM à des postes d’ingénieur commercial IT, ingénieur d’affaires, responsable d’agence et chef de projet. 
+<!-- ================= PROFIL ================= -->
+<div class="uml-package">
 
-Mon expertise couvre le développement commercial BtoB, la gestion de projets IT, la transformation digitale et le sourcing d’équipes projets, sur l’ensemble du cycle de valeur : prospection, avant-vente, gestion de portefeuille et delivery. 
+  <div class="uml-title">Profil</div>
 
-Issu de l’écosystème IBM, j’ai travaillé sur des environnements complexes (IBM Mainframe, IBM i / AS400, COBOL, RPG, Nat System, ERP, l'écosystème de développement logciels (incluant Java, .NET, C#, PHP et les technologies web (HTML/CSS)...), me permettant de combiner vision technique et compréhension métier. 
+  <div class="usecase" style="width:100%;">
+    Spécialiste des systèmes d’information issu d’une école de commerce, j’ai complété mon parcours par un Master 1 CCA (2023) et une certification Product Manager (2025).<br><br>
 
-J’accompagne aujourd’hui les organisations dans leur optimisation opérationnelle, leur digitalisation et l’alignement SI / métiers, tout en intervenant en enseignement et formation auprès d’étudiants et de professionnels.
+    Depuis plus de 30 ans, j’évolue à l’intersection de la technologie, du business et de la formation, avec un parcours allant de fonctions techniques IBM à des postes d’ingénieur commercial IT, ingénieur d’affaires, responsable d’agence et chef de projet.<br><br>
 
-Ouvert aux opportunités de Consultant Senior en transformation digitale, Business Manager, Product Manager, AMOA ou Chef de projet digital. 
+    Mon expertise couvre le développement commercial BtoB, la gestion de projets IT, la transformation digitale et le sourcing d’équipes projets, sur l’ensemble du cycle de valeur : prospection, avant-vente, gestion de portefeuille et delivery.<br><br>
 
-« Transformer les idées en résultats concrets et accélérer la performance des organisations. »
+    Issu de l’écosystème IBM, j’ai travaillé sur des environnements complexes (IBM Mainframe, IBM i / AS400, COBOL, RPG, Nat System, ERP, Java, .NET, C#, PHP, HTML/CSS), me permettant de combiner vision technique et compréhension métier.<br><br>
 
-<div style="
-font-family:Arial, Helvetica, sans-serif;
-font-size:11px;
-text-align:center;
-max-width:260px;
-margin:auto;
-background:white;
-color:black;">
+    J’accompagne aujourd’hui les organisations dans leur optimisation opérationnelle, leur digitalisation et l’alignement SI / métiers.<br><br>
 
-  <h3 style="
-  margin:0 0 12px 0;
-  font-size:16px;
-  font-weight:bold;
-  color:black;">
-    Timeline :
-  </h3>
-
-  <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Analyste IBM</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Ingénieur commercial IT</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Ingénieur d'affaires<br>Grands Comptes</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Responsable d'agence<br>/ Responsable projet</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Business Manager</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Ingénieur commercial IT<br>& accompagnement projets</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>Enseignement & Formation</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;height:42px;display:flex;align-items:center;justify-content:center;">
-      <b>M1 CCA & Product Management</b>
-    </div>
-
-    <div>↓</div>
-
-    <div style="border:1px solid #000;border-radius:6px;padding:8px;width:220px;display:flex;align-items:center;justify-content:center;">
-      <b>Formateur gestion & digitalisation<br>Conseil en transformation digitale</b>
-    </div>
-
-  </div>
-
-  <div style="
-  margin-top:12px;
-  font-size:13px;
-  font-weight:bold;
-  color:black;">
-    ► 37 ans d'expérience ◄
+    « Transformer les idées en résultats concrets et accélérer la performance des organisations. »
   </div>
 
 </div>
 
-  
+<!-- ================= ARCHITECTURE METIERS ================= -->
+<div class="uml-package">
+
+  <div class="uml-title">Architecture des compétences métiers</div>
+
+  <div class="uml-line">
+
+    <div class="usecase">
+      <b>Analyste IBM</b><br>
+      <small>Fondation technique</small>
+    </div>
+
+    <div class="usecase">
+      <b>Ingénieur commercial IT</b><br>
+      <small>Business & solutions</small>
+    </div>
+
+    <div class="usecase">
+      <b>Ingénieur d'affaires</b><br>
+      <small>Grands comptes</small>
+    </div>
+
+    <div class="usecase">
+      <b>Responsable d'agence</b><br>
+      <small>Management</small>
+    </div>
+
+    <div class="usecase">
+      <b>Business Manager</b><br>
+      <small>Pilotage commercial</small>
+    </div>
+
+    <div class="usecase">
+      <b>Accompagnement projets</b><br>
+      <small>Delivery</small>
+    </div>
+
+    <div class="usecase">
+      <b>Enseignement & formation</b><br>
+      <small>Transmission</small>
+    </div>
+
+    <div class="usecase">
+      <b>M1 CCA & Product Management</b><br>
+      <small>Structuration académique</small>
+    </div>
+
+    <div class="usecase">
+      <b>Consultant transformation digitale</b><br>
+      <small>Conseil</small>
+    </div>
+
+  </div>
+
 </div>
+
+<!-- ================= COMPETENCES ================= -->
+<div class="uml-package">
+
+  <div class="uml-title">Compétences</div>
+
+  <div class="uml-line">
+
+    <div class="usecase">
+      <b>Analyse stratégique et conseil</b><br><br>
+      Réaliser une veille concurrentielle et sectorielle, élaborer des recommandations adaptées aux enjeux du client, accompagner la prise de décision et la transformation des organisations.
+    </div>
+
+    <div class="usecase">
+      <b>Développement commercial</b><br><br>
+      Prospecter de nouveaux clients, identifier les opportunités d'affaires, développer et fidéliser un portefeuille clients.
+    </div>
+
+    <div class="usecase">
+      <b>Négociation et vente complexe</b><br><br>
+      Analyser les besoins des clients, construire des propositions adaptées, négocier les conditions commerciales et conclure les ventes.
+    </div>
+
+    <div class="usecase">
+      <b>Gestion de projet et coordination</b><br><br>
+      Coordonner les équipes techniques, marketing et support, assurer le suivi des projets clients, garantir le respect des délais, des coûts et de la qualité.
+    </div>
+
+    <div class="usecase">
+      <b>Compétences transverses</b><br><br>
+      Product management • Formation
+    </div>
+
+  </div>
+
 </div>
+
+<!-- ================= RELATIONS ================= -->
+<div class="uml-package">
+
+  <div class="uml-title">Relations (logique UML)</div>
+
+  <div class="usecase" style="width:100%;">
+    ► Analyste IBM → Ingénieur commercial IT → Ingénieur d'affaires → Responsable d'agence → Business Manager → Consultant<br><br>
+
+    ► Business Manager → Gestion de projet → Conseil transformation digitale<br><br>
+
+    ► Formation ↔ Product Management ↔ Conseil<br><br>
+
+    ► Axe transversal : Technique ↔ Business ↔ Formation
+  </div>
+
+</div>
+
+<!-- ================= TIMELINE ================= -->
+<div class="uml-package">
+
+  <div class="uml-title">Timeline</div>
+
+  <div class="timeline">
+
+    <div class="timeline-box"><b>Analyste IBM</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Ingénieur commercial IT</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Ingénieur d'affaires</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Responsable d'agence</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Business Manager</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Enseignement & Formation</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>M1 CCA & Product Management</b></div>
+    <div class="arrow">↓</div>
+
+    <div class="timeline-box"><b>Consultant transformation digitale</b></div>
+
+  </div>
+
+</div>
+
 </div>
 
 <!-- EXPERIENCE -->
