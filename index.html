@@ -12,6 +12,7 @@
   --text:#e5e7eb;
   --muted:#94a3b8;
   --accent:#38bdf8;
+  --border:#1f2937;
 }
 
 * {
@@ -31,7 +32,7 @@ header {
   padding:60px 20px;
   text-align:center;
   background:linear-gradient(135deg,#0b1220,#1e293b);
-  border-bottom:1px solid #1f2937;
+  border-bottom:1px solid var(--border);
 }
 
 header h1 {font-size:2.4rem;}
@@ -48,22 +49,28 @@ header h2 {
   padding:40px 20px;
 }
 
-/* UML STYLE */
-.uml-package {
-  margin-top:25px;
-  border:1px solid #1f2937;
-  padding:15px;
+/* ================== BASE COMPONENTS ================== */
+
+.card {
+  background:var(--card);
+  border:1px solid var(--border);
   border-radius:10px;
-  background:rgba(17,24,39,0.6);
+  padding:15px;
 }
 
-.uml-title {
+.section {
+  margin-top:25px;
+}
+
+.section-title {
   color:var(--accent);
   font-weight:bold;
   margin-bottom:12px;
   border-left:4px solid var(--accent);
   padding-left:10px;
 }
+
+/* ================== UML ================== */
 
 .uml-line {
   display:flex;
@@ -73,36 +80,29 @@ header h2 {
 
 .usecase {
   background:var(--card);
-  border:1px solid #1f2937;
+  border:1px solid var(--border);
   border-radius:10px;
   padding:12px;
   width:240px;
 }
 
-.usecase b {
-  color:var(--text);
+.usecase.full {
+  width:100%;
 }
 
-.usecase small {
-  color:var(--muted);
-}
+/* ================== TIMELINE ================== */
 
-/* TIMELINE */
 .timeline {
-  background:var(--card);
-  border:1px solid #1f2937;
-  border-radius:10px;
-  padding:15px;
   text-align:center;
 }
 
 .timeline-box {
-  border:1px solid #1f2937;
+  border:1px solid var(--border);
   padding:8px;
   border-radius:6px;
   width:220px;
   margin:auto;
-  background:#0b1220;
+  background:var(--bg);
 }
 
 .arrow {
@@ -110,6 +110,30 @@ header h2 {
   margin:6px 0;
 }
 
+/* ================== EXPERIENCE ================== */
+
+.flex-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.exp-box {
+  border:1px solid #444;
+  padding:10px;
+  width:240px;
+}
+
+.muted {
+  color:var(--muted);
+}
+
+pre {
+  background:var(--card);
+  padding:10px;
+  border-radius:8px;
+  overflow:auto;
+}
 </style>
 </head>
 
@@ -123,311 +147,151 @@ header h2 {
 <div class="container">
 
 <!-- ================= PROFIL ================= -->
-<div class="uml-package">
+<div class="section card">
+  <div class="section-title">Profil</div>
 
-  <div class="uml-title">Profil</div>
-
-  <div class="usecase" style="width:100%;">
-    Spécialiste des systèmes d’information issu d’une école de commerce, j’ai complété mon parcours par un Master 1 CCA (2023) et une certification Product Manager (2025).<br><br>
-
-    Depuis plus de 30 ans, j’évolue à l’intersection de la technologie, du business et de la formation, avec un parcours allant de fonctions techniques IBM à des postes d’ingénieur commercial IT, ingénieur d’affaires, responsable d’agence et chef de projet.<br><br>
-
-    Mon expertise couvre le développement commercial BtoB, la gestion de projets IT, la transformation digitale et le sourcing d’équipes projets, sur l’ensemble du cycle de valeur : prospection, avant-vente, gestion de portefeuille et delivery.<br><br>
-
-    Issu de l’écosystème IBM, j’ai travaillé sur des environnements complexes (IBM Mainframe, IBM i / AS400, COBOL, RPG, Nat System, ERP, Java, .NET, C#, PHP, HTML/CSS), me permettant de combiner vision technique et compréhension métier.<br><br>
-
-    J’accompagne aujourd’hui les organisations dans leur optimisation opérationnelle, leur digitalisation et l’alignement SI / métiers.<br><br>
-
-    « Transformer les idées en résultats concrets et accélérer la performance des organisations. »
+  <div class="usecase full">
+    Spécialiste des systèmes d’information issu d’une école de commerce...
   </div>
-
 </div>
 
-<!-- ================= ARCHITECTURE METIERS ================= -->
-<div class="uml-package">
-
-  <div class="uml-title">Architecture des compétences métiers</div>
+<!-- ================= ARCHITECTURE ================= -->
+<div class="section card">
+  <div class="section-title">Architecture des compétences métiers</div>
 
   <div class="uml-line">
 
-    <div class="usecase">
-      <b>Analyste IBM</b><br>
-      <small>Fondation technique</small>
-    </div>
-
-    <div class="usecase">
-      <b>Ingénieur commercial IT</b><br>
-      <small>Business & solutions</small>
-    </div>
-
-    <div class="usecase">
-      <b>Ingénieur d'affaires</b><br>
-      <small>Grands comptes</small>
-    </div>
-
-    <div class="usecase">
-      <b>Responsable d'agence</b><br>
-      <small>Management</small>
-    </div>
-
-    <div class="usecase">
-      <b>Business Manager</b><br>
-      <small>Pilotage commercial</small>
-    </div>
-
-    <div class="usecase">
-      <b>Accompagnement projets</b><br>
-      <small>Delivery</small>
-    </div>
-
-    <div class="usecase">
-      <b>Enseignement & formation</b><br>
-      <small>Transmission</small>
-    </div>
-
-    <div class="usecase">
-      <b>M1 CCA & Product Management</b><br>
-      <small>Structuration académique</small>
-    </div>
-
-    <div class="usecase">
-      <b>Consultant transformation digitale</b><br>
-      <small>Conseil</small>
-    </div>
+    <div class="usecase"><b>Analyste IBM</b><br><small>Fondation technique</small></div>
+    <div class="usecase"><b>Ingénieur commercial IT</b><br><small>Business & solutions</small></div>
+    <div class="usecase"><b>Ingénieur d'affaires</b><br><small>Grands comptes</small></div>
+    <div class="usecase"><b>Responsable d'agence</b><br><small>Management</small></div>
+    <div class="usecase"><b>Business Manager</b><br><small>Pilotage commercial</small></div>
+    <div class="usecase"><b>Accompagnement projets</b><br><small>Delivery</small></div>
+    <div class="usecase"><b>Enseignement & formation</b><br><small>Transmission</small></div>
+    <div class="usecase"><b>M1 CCA & Product Management</b><br><small>Structuration académique</small></div>
+    <div class="usecase"><b>Consultant transformation digitale</b><br><small>Conseil</small></div>
 
   </div>
-
 </div>
 
 <!-- ================= COMPETENCES ================= -->
-<div class="uml-package">
-
-  <div class="uml-title">Compétences</div>
+<div class="section card">
+  <div class="section-title">Compétences</div>
 
   <div class="uml-line">
 
     <div class="usecase">
-      <b>Analyse stratégique et conseil</b><br><br>
-      Réaliser une veille concurrentielle et sectorielle, élaborer des recommandations adaptées aux enjeux du client, accompagner la prise de décision et la transformation des organisations.
+      <b>Analyse stratégique</b><br><br>
+      Veille et recommandations...
     </div>
 
     <div class="usecase">
       <b>Développement commercial</b><br><br>
-      Prospecter de nouveaux clients, identifier les opportunités d'affaires, développer et fidéliser un portefeuille clients.
+      Prospection et fidélisation...
     </div>
 
     <div class="usecase">
-      <b>Négociation et vente complexe</b><br><br>
-      Analyser les besoins des clients, construire des propositions adaptées, négocier les conditions commerciales et conclure les ventes.
+      <b>Négociation</b><br><br>
+      Vente complexe et closing...
     </div>
 
     <div class="usecase">
-      <b>Gestion de projet et coordination</b><br><br>
-      Coordonner les équipes techniques, marketing et support, assurer le suivi des projets clients, garantir le respect des délais, des coûts et de la qualité.
+      <b>Gestion de projet</b><br><br>
+      Coordination et pilotage...
     </div>
 
     <div class="usecase">
-      <b>Compétences transverses</b><br><br>
+      <b>Transverse</b><br><br>
       Product management • Formation
     </div>
 
   </div>
-
 </div>
 
 <!-- ================= RELATIONS ================= -->
-<div class="uml-package">
+<div class="section card">
+  <div class="section-title">Relations UML</div>
 
-  <div class="uml-title">Relations (logique UML)</div>
-
-  <div class="usecase" style="width:100%;">
-    ► Analyste IBM → Ingénieur commercial IT → Ingénieur d'affaires → Responsable d'agence → Business Manager → Consultant<br><br>
-
-    ► Business Manager → Gestion de projet → Conseil transformation digitale<br><br>
-
-    ► Formation ↔ Product Management ↔ Conseil<br><br>
-
-    ► Axe transversal : Technique ↔ Business ↔ Formation
+  <div class="usecase full">
+    ► Analyste IBM → Ingénieur commercial → Ingénieur d'affaires → Responsable d'agence → Business Manager → Consultant
   </div>
-
 </div>
 
 <!-- ================= TIMELINE ================= -->
-<div class="uml-package">
-
-  <div class="uml-title">Timeline</div>
+<div class="section card">
+  <div class="section-title">Timeline</div>
 
   <div class="timeline">
 
-    <div class="timeline-box"><b>Analyste IBM</b></div>
+    <div class="timeline-box">Analyste IBM</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Ingénieur commercial IT</b></div>
+    <div class="timeline-box">Ingénieur commercial IT</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Ingénieur d'affaires</b></div>
+    <div class="timeline-box">Ingénieur d'affaires</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Responsable d'agence</b></div>
+    <div class="timeline-box">Responsable d'agence</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Business Manager</b></div>
+    <div class="timeline-box">Business Manager</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Enseignement & Formation</b></div>
+    <div class="timeline-box">Formation</div>
     <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>M1 CCA & Product Management</b></div>
-    <div class="arrow">↓</div>
-
-    <div class="timeline-box"><b>Consultant transformation digitale</b></div>
+    <div class="timeline-box">Consultant</div>
 
   </div>
+</div>
 
+<!-- ================= EXPERIENCE ================= -->
+<div class="section card">
+  <div class="section-title">Expérience professionnelle</div>
+
+  <h3>👨‍🏫 Formation & Enseignement</h3>
+  <div class="flex-grid">
+    <div class="exp-box">Enseignant polyvalent</div>
+    <div class="exp-box">SII / Technologies</div>
+    <div class="exp-box">Économie-Gestion</div>
+    <div class="exp-box">Gestion-Finance</div>
+  </div>
+
+  <h3 style="margin-top:20px;">💻 Développement commercial</h3>
+  <div class="flex-grid">
+    <div class="exp-box">Business Development</div>
+    <div class="exp-box">Conseil IT</div>
+    <div class="exp-box">Pilotage projets</div>
+    <div class="exp-box">Reporting</div>
+  </div>
+
+  <h3 style="margin-top:20px;">💻 Informatique</h3>
+  <div class="flex-grid">
+    <div class="exp-box">AS/400</div>
+    <div class="exp-box">Exploitation</div>
+    <div class="exp-box">Support</div>
+  </div>
+</div>
+
+<!-- ================= UML TEXTE ================= -->
+<div class="section card">
+  <div class="section-title">Relations UML</div>
+  <pre>
+Formation
+ ├── SII
+ ├── Économie-Gestion
+ └── Finance
+
+Commercial
+ ├── Conseil IT
+ ├── Projets
+ └── Reporting
+
+IT
+ ├── AS/400
+ ├── Exploitation
+ └── Support
+  </pre>
 </div>
 
 </div>
 
-<!-- EXPERIENCE -->
-<div style="font-family: Arial;">
-
-<h2>Expérience professionnelle</h2>
-
-<!-- ================= FORMATION ================= -->
-<div style="border:1px solid #333; padding:10px; margin-bottom:20px;">
-
-<h3>👨‍🏫 FORMATION & ENSEIGNEMENT (2014 - 2026)</h3>
-
-<div style="display:flex; flex-wrap:wrap; gap:10px;">
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Enseignant Polyvalent</b><br><br>
-    + Premier degré<br>
-    + Second degré<br>
-    + BTS<br>
-    + Gestion / Numérique / SI
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>SII / Technologies</b><br><br>
-    + Systèmes techniques<br>
-    + Outils numériques<br>
-    + Environnements industriels
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Économie-Gestion</b><br><br>
-    + Relation client<br>
-    + Digitalisation<br>
-    + BTS MCO / NDRC / GPME
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Gestion-Finance</b><br><br>
-    + Contrôle de gestion<br>
-    + Analyse des coûts<br>
-    + SI de gestion<br>
-    + BTS CG
-  </div>
-
-</div>
-</div>
-
-<!-- ================= DEV COMMERCIAL ================= -->
-<div style="border:1px solid #333; padding:10px; margin-bottom:20px;">
-
-<h3>💻 DÉVELOPPEMENT COMMERCIAL (1995 - 2014)</h3>
-
-<div style="display:flex; flex-wrap:wrap; gap:10px;">
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Business Development</b><br><br>
-    Prospection • AO • closing<br>
-    Grands comptes / PME<br>
-    CA ~ 5 M€
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Conseil IT</b><br><br>
-    IBM AS/400 • mainframe<br>
-    COBOL • RPG<br>
-    Solutions sur mesure
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Pilotage Projets</b><br><br>
-    Coordination équipes<br>
-    Délais • qualité • livrables
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Reporting</b><br><br>
-    KPI • CA • marge • pipeline<br>
-    CRM (HubSpot)
-  </div>
-
-</div>
-</div>
-
-<!-- ================= INFORMATIQUE ================= -->
-<div style="border:1px solid #333; padding:10px; margin-bottom:20px;">
-
-<h3>💻 INFORMATIQUE (1989 - 1992)</h3>
-
-<div style="display:flex; flex-wrap:wrap; gap:10px;">
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Développement AS/400</b><br><br>
-    RPG II / RPG III<br>
-    BPCS Essilor<br>
-    Maintenance applicative
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Exploitation</b><br><br>
-    Mainframe • batch<br>
-    supervision • incidents
-  </div>
-
-  <div style="border:1px solid #444; padding:10px; width:240px;">
-    <b>Support</b><br><br>
-    N1 / N2<br>
-    diagnostic • résolution
-  </div>
-
-</div>
-</div>
-
-<!-- ================= LIENS UML ================= -->
-<div style="border:1px dashed #333; padding:10px;">
-
-<h3>🔗 Relations UML (logique de compétences)</h3>
-
-<pre>
-Formation & Enseignement
-   ├── SII / Technologies
-   ├── Économie-Gestion
-   └── Gestion-Finance
-
-Développement Commercial
-   ├── Conseil IT
-   ├── Pilotage Projets
-   └── Reporting
-
-Informatique
-   ├── Développement AS/400
-   ├── Exploitation
-   └── Support
-</pre>
-
-</div>
-
-</div>
-
-
-  
-
-<footer style="text-align:center; padding:20px; color:#94a3b8;">
+<footer style="text-align:center; padding:20px; color:var(--muted);">
 Product manager – Portfolio GitHub Pages – Ludovic BULTEY – Juin 2026
 </footer>
 
