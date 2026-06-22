@@ -194,37 +194,44 @@ color:black;">
 <div class="card">
 👨‍🏫 FORMATION & ENSEIGNEMENT (2014 - 2026)
 
-<div class="expertise-enseignement">
+@startuml
+
+class EnseignantPolyvalent {
+  +PremierDegré
+  +SecondDegré
+  +EnseignementSupérieur_BTS
+  +Orientation : Gestion / Numérique / SI
+}
+
+class SII_Technologies {
+  +SystemesTechniques
+  +OutilsNumeriques
+  +EnvironnementsIndustriels
+}
+
+class EconomieGestion {
+  +RelationClient
+  +DigitalisationProcessus
+  +DeveloppementCommercial
+  +BTS_MCO_NDRC_GPME
+}
+
+class GestionFinance {
+  +ControleDeGestion
+  +AnalyseDesCouts
+  +Pilotage
+  +SystemesInformationGestion
+  +BTS_CG
+}
+
+EnseignantPolyvalent --> SII_Technologies
+EnseignantPolyvalent --> EconomieGestion
+EnseignantPolyvalent --> GestionFinance
+
+@enduml
+
+
   
-  <div class="item">
-    <span class="icon">🔷</span>
-    <p>
-      Enseignant polyvalent avec une expérience couvrant le premier degré, le second degré et l’enseignement supérieur (BTS), avec une forte orientation vers la gestion, le numérique et les systèmes d’information.
-    </p>
-  </div>
-
-  <div class="item">
-    <span class="icon">🔷</span>
-    <p>
-      Interventions en sciences industrielles de l’ingénieur (SII) et technologies, avec une approche des systèmes techniques, des outils numériques et des environnements industriels.
-    </p>
-  </div>
-
-  <div class="item">
-    <span class="icon">🔷</span>
-    <p>
-      Enseignement en économie-gestion, droit et techniques commerciales (BTS MCO, NDRC, GPME), incluant la relation client, la digitalisation des processus et le développement commercial.
-    </p>
-  </div>
-
-  <div class="item">
-    <span class="icon">🔷</span>
-    <p>
-      Formation en gestion-finance et contrôle de gestion (BTS Comptabilité-Gestion) : analyse des coûts, outils de pilotage et exploitation des systèmes d’information appliqués à la gestion.
-    </p>
-  </div>
-
-</div>
 </div>
 
 <div class="card">
