@@ -194,42 +194,105 @@ color:black;">
 <div class="card">
 👨‍🏫 FORMATION & ENSEIGNEMENT (2014 - 2026)
 
-@startuml
+Voici une version “à plat type UML” en HTML, structurée comme un diagramme de classes (style bloc + relations visuelles simples sans image externe) :
 
-class EnseignantPolyvalent {
-  +PremierDegré
-  +SecondDegré
-  +EnseignementSupérieur_BTS
-  +Orientation : Gestion / Numérique / SI
+<div class="uml">
+
+  <div class="class-box main">
+    <div class="class-title">Enseignant Polyvalent</div>
+    <div class="class-content">
+      <p>+ Premier degré</p>
+      <p>+ Second degré</p>
+      <p>+ Enseignement supérieur (BTS)</p>
+      <p>+ Orientation : Gestion / Numérique / Systèmes d’information</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="uml-row">
+
+    <div class="class-box">
+      <div class="class-title">SII / Technologies</div>
+      <div class="class-content">
+        <p>+ Systèmes techniques</p>
+        <p>+ Outils numériques</p>
+        <p>+ Environnements industriels</p>
+      </div>
+    </div>
+
+    <div class="class-box">
+      <div class="class-title">Économie-Gestion</div>
+      <div class="class-content">
+        <p>+ Relation client</p>
+        <p>+ Digitalisation des processus</p>
+        <p>+ Développement commercial</p>
+        <p>+ BTS MCO / NDRC / GPME</p>
+      </div>
+    </div>
+
+    <div class="class-box">
+      <div class="class-title">Gestion-Finance</div>
+      <div class="class-content">
+        <p>+ Contrôle de gestion</p>
+        <p>+ Analyse des coûts</p>
+        <p>+ Pilotage de la performance</p>
+        <p>+ Systèmes d’information de gestion</p>
+        <p>+ BTS CG</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+.uml {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #222;
 }
 
-class SII_Technologies {
-  +SystemesTechniques
-  +OutilsNumeriques
-  +EnvironnementsIndustriels
+.class-box {
+  border: 2px solid #333;
+  border-radius: 6px;
+  width: 260px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
 }
 
-class EconomieGestion {
-  +RelationClient
-  +DigitalisationProcessus
-  +DeveloppementCommercial
-  +BTS_MCO_NDRC_GPME
+.class-box.main {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
 }
 
-class GestionFinance {
-  +ControleDeGestion
-  +AnalyseDesCouts
-  +Pilotage
-  +SystemesInformationGestion
-  +BTS_CG
+.class-title {
+  background: #f2f2f2;
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #333;
 }
 
-EnseignantPolyvalent --> SII_Technologies
-EnseignantPolyvalent --> EconomieGestion
-EnseignantPolyvalent --> GestionFinance
+.class-content {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
 
-@enduml
+.uml-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.arrow {
+  font-size: 24px;
+  margin: 10px 0;
+}
+</style>
 
   
 </div>
