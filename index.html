@@ -1,147 +1,277 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>CV - Consultant SI, Data & IA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      color: #222;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #1a1a1a;
-    }
-    h1 {
-      font-size: 28px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    h2 {
-      margin-top: 25px;
-      font-size: 20px;
-      border-left: 4px solid #333;
-      padding-left: 10px;
-    }
-    ul {
-      margin-top: 5px;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    .tagline {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>CV - Consultant SI Data IA</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header h2 {
+  margin: 10px 0 0;
+  font-weight: normal;
+  color: #dbeafe;
+}
+
+.header p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* CARDS */
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+/* TITLES */
+h2 {
+  color: #60a5fa;
+  border-left: 4px solid #7c3aed;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #a78bfa;
+  margin-bottom: 5px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  background: #1d4ed8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 3px;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 3px solid #7c3aed;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.event {
+  margin-bottom: 20px;
+}
+
+.year {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+/* LIST */
+ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  background: #0ea5e9;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  margin: 2px;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
   <h1>Consultant SI, Data & IA</h1>
-  <div class="tagline">Transformation digitale · Business & Product Management</div>
+  <h2>Transformation digitale · Business · Product Management</h2>
+  <p>Expert SI | IBM i / AS400 | Data & IA | Gestion de projet | Business Development</p>
+</div>
 
-  <div class="section">
-    <h2>Profil</h2>
-    <p>
-      Plus de 30 ans d’expérience dans les systèmes d’information, le développement commercial IT et le conseil en transformation digitale.
-      Expertise dans le sourcing, le détachement et la coordination de consultants sur des projets Java, .NET et IBM (IBM i / AS/400, RPG, COBOL),
-      ainsi que sur des environnements NSDK et NATSTAR. Expérience confirmée en gestion de projet, transformation digitale et accompagnement
-      des organisations, avec une ouverture sur les enjeux Data et Intelligence Artificielle.
-    </p>
-  </div>
+<!-- PROFIL -->
+<div class="card">
+  <h2>Profil</h2>
+  <p>
+    Professionnel expérimenté avec plus de 30 ans dans les systèmes d'information, le développement commercial IT
+    et la transformation digitale. J’interviens sur des environnements complexes mêlant legacy (IBM i / AS400, COBOL, RPG)
+    et technologies modernes (Web, Data, BI, IA).
+  </p>
+  <p>
+    Forte capacité d’adaptation, vision produit et business, et expérience complète allant du développement commercial
+    au pilotage de projets et à l’accompagnement des organisations dans leur transformation numérique.
+  </p>
+</div>
 
-  <div class="section">
-    <h2>Compétences</h2>
+<!-- COMPETENCES -->
+<div class="grid">
 
-    <h3>Stratégie & Business</h3>
-    <ul>
-      <li>Veille concurrentielle et sectorielle</li>
-      <li>Recommandations et accompagnement décisionnel</li>
-      <li>Transformation des organisations</li>
-      <li>Prospection et développement commercial</li>
-      <li>Fidélisation et développement portefeuille clients</li>
-      <li>Négociation, closing et analyse des besoins</li>
-    </ul>
+<div class="card">
+<h2>Business & Stratégie</h2>
 
-    <h3>Pilotage de projets</h3>
-    <ul>
-      <li>Coordination équipes techniques, marketing et support</li>
-      <li>Suivi de projets clients (coûts, délais, qualité)</li>
-      <li>Gestion multi-environnements</li>
-      <li>Reporting, KPI, pilotage de performance</li>
-    </ul>
+<span class="tag">Business Dev</span>
+<span class="tag">Stratégie</span>
+<span class="tag">Négociation</span>
+<span class="tag">Closing</span>
 
-    <h3>Product / Data / IA</h3>
-    <ul>
-      <li>Product management & roadmap produit</li>
-      <li>Data & analytics, BI, dashboards</li>
-      <li>Design, prototypage, delivery agile</li>
-      <li>Formation et accompagnement utilisateurs</li>
-    </ul>
+<ul>
+<li>Analyse de marché et veille stratégique</li>
+<li>Développement de portefeuille clients BtoB</li>
+<li>Gestion grands comptes & PME</li>
+<li>Appels d’offres et réponse technique</li>
+<li>Fidélisation et développement commercial</li>
+</ul>
+</div>
 
-    <h3>Outils & Environnements</h3>
-    <ul>
-      <li>Jira, Notion, Slack, Figma, Miro, Trello, Canva, ChatGPT</li>
-      <li>Power BI, SQL, Python (bases), IA appliquée</li>
-      <li>IBM i (AS/400), COBOL, RPG</li>
-      <li>HTML, CSS, JavaScript, PHP, Java</li>
-    </ul>
-  </div>
+<div class="card">
+<h2>Produit / Data / IA</h2>
 
-  <div class="section">
-    <h2>Expérience professionnelle</h2>
+<span class="tag">Product Management</span>
+<span class="tag">Data</span>
+<span class="tag">IA</span>
+<span class="tag">BI</span>
 
-    <h3>Enseignant – Gestion, numérique et SI</h3>
-    <p>10+ ans – CFA / enseignement public & privé</p>
-    <ul>
-      <li>Économie-gestion, droit, BTS MCO, NDRC, GPME</li>
-      <li>Gestion financière et contrôle de gestion</li>
-      <li>Relation client et systèmes d’information</li>
-      <li>Pédagogie et accompagnement des apprenants</li>
-    </ul>
+<ul>
+<li>Définition de roadmap produit</li>
+<li>Analyse de données & dashboards Power BI</li>
+<li>UX / prototypage / wireframes</li>
+<li>Approche agile (Scrum / Kanban)</li>
+<li>Automatisation & IA appliquée</li>
+</ul>
+</div>
 
-    <h3>Ingénieur commercial IT / Responsable d’agence</h3>
-    <ul>
-      <li>Développement commercial BtoB grands comptes & PME</li>
-      <li>Appels d’offres, négociation, closing</li>
-      <li>Gestion de CA multi-million euros</li>
-      <li>Constitution et pilotage d’équipes d’experts</li>
-      <li>Sourcing solutions IT (IBM, AS/400, web)</li>
-    </ul>
+</div>
 
-    <h3>Analyste IBM (AS/400)</h3>
-    <ul>
-      <li>Développement RPG II / RPG III</li>
-      <li>Maintenance applicative et évolutive</li>
-      <li>Support exploitation et utilisateurs</li>
-    </ul>
-  </div>
+<!-- OUTILS -->
+<div class="card">
+<h2>Environnements & Outils</h2>
 
-  <div class="section">
-    <h2>Formations</h2>
-    <ul>
-      <li>Master Management stratégie & développement de projet digital (Bac+5)</li>
-      <li>Master 1 CCA – Comptabilité, Contrôle, Audit</li>
-      <li>Bac+5 Architecte client/serveur</li>
-      <li>Bac+4 Chargé d’affaires en informatique</li>
-      <li>BTS Comptabilité et gestion</li>
-    </ul>
-  </div>
+<span class="badge">Power BI</span>
+<span class="badge">SQL</span>
+<span class="badge">Python (bases)</span>
+<span class="badge">Jira</span>
+<span class="badge">Notion</span>
+<span class="badge">Figma</span>
+<span class="badge">Miro</span>
+<span class="badge">Trello</span>
+<span class="badge">Canva</span>
+<span class="badge">ChatGPT</span>
+<span class="badge">IBM i (AS/400)</span>
+<span class="badge">COBOL</span>
+<span class="badge">RPG</span>
+<span class="badge">HTML/CSS/JS</span>
+</div>
 
-  <div class="section">
-    <h2>Bureautique</h2>
-    <p>Word, Excel (avancé), PowerPoint</p>
-  </div>
+<!-- EXPERIENCE -->
+<div class="card">
+<h2>Expérience professionnelle</h2>
 
-  <div class="section">
-    <h2>Modalités</h2>
-    <p>Télétravail privilégié – présentiel ponctuel possible</p>
-  </div>
+<div class="timeline">
+
+<div class="event">
+<div class="year">Enseignant (10+ ans)</div>
+<h3>Gestion, SI, économie & numérique</h3>
+<ul>
+<li>BTS MCO, NDRC, GPME, CG</li>
+<li>Relation client & digitalisation</li>
+<li>Sciences de gestion et SI</li>
+<li>Pédagogie active et accompagnement apprenants</li>
+</ul>
+</div>
+
+<div class="event">
+<div class="year">Ingénieur commercial IT</div>
+<h3>Développement & Conseil IT</h3>
+<ul>
+<li>Développement business BtoB (banque, assurance, industrie)</li>
+<li>Gestion de CA multi-million euros</li>
+<li>Sourcing solutions IBM / web / legacy</li>
+<li>Pilotage équipes et projets</li>
+</ul>
+</div>
+
+<div class="event">
+<div class="year">Analyste IBM AS/400</div>
+<h3>Développement & exploitation</h3>
+<ul>
+<li>RPG II / RPG III / COBOL</li>
+<li>Maintenance applicative</li>
+<li>Support exploitation & utilisateurs</li>
+<li>Gestion incidents et continuité de service</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- FORMATION -->
+<div class="card">
+<h2>Formation</h2>
+<ul>
+<li>Master Management & stratégie digitale (Bac+5)</li>
+<li>Master 1 CCA – Comptabilité / Audit</li>
+<li>Bac+5 Architecte client/serveur</li>
+<li>Bac+4 Chargé d’affaires informatique</li>
+<li>BTS Comptabilité & gestion</li>
+</ul>
+</div>
+
+<!-- MODALITES -->
+<div class="card">
+<h2>Modalités</h2>
+<p>
+Télétravail privilégié – présentiel ponctuel possible – mobilité projet – intervention conseil / formation / pilotage.
+</p>
+</div>
+
+</div>
 
 </body>
 </html>
